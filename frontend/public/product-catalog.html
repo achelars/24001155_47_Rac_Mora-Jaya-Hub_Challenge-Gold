@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog - Mora Jaya Hub</title>
+    <link rel="stylesheet" href="assets/css/catalog-styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Mora Jaya Hub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product-catalog.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="breadcrumb">
+        <p><a href="index.html">Home</a> > <a href="product-catalog.html">Products</a></p>
+    </section>
+
+    <div class="catalog-container">
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <ul class="category-list">
+                <li><a href="#">All</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Skirts</a></li>
+                <li><a href="#">Top Sets with Skirts</a></li>
+                <li><a href="#">Top Sets with Culottes</a></li>
+            </ul>
+            
+            <h3>Filter By</h3>
+            <div class="filter-group">
+                <label for="price-range">Price Range</label>
+                <input type="range" id="price-range" name="price-range" min="0" max="500" step="10">
+                <span id="price-range-value">$0 - $500</span>
+            </div>
+            <div class="filter-group">
+                <label for="material">Material</label>
+                <select id="material" name="material">
+                    <option value="all">All</option>
+                    <option value="cotton">Cotton</option>
+                    <option value="silk">Silk</option>
+                    <option value="linen">Linen</option>
+                </select>
+            </div>
+        </aside>
+
+        <main class="product-list">
+            <div class="top-bar">
+                <input type="text" id="search" name="search" placeholder="Search products...">
+                <select id="sort-options" name="sort-options">
+                    <option value="newest">Newest Arrivals</option>
+                    <option value="low-high">Price: Low to High</option>
+                    <option value="high-low">Price: High to Low</option>
+                    <option value="name-asc">Name: A to Z</option>
+                    <option value="name-desc">Name: Z to A</option>
+                </select>
+            </div>
+
+            <div class="product-grid" id="product-grid">
+                
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="prev">&laquo; Previous</a>
+                <a href="#" class="page-number">1</a>
+                <a href="#" class="page-number">2</a>
+                <a href="#" class="next">Next &raquo;</a>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mora Jaya Hub</p>
+    </footer>
+
+    <script src="assets/js/catalog-scripts.js"></script>
+</body>
+
+</html>
